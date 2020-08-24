@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Unit Converter</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div id="unitConverter">
+         <header class="unitConverter-header">
+            Unit Converter
+         </header>
+         <main class="unitConverter-body">
+            <div class="input__inch">
+               <h3>inch</h3>
+               <input
+                  type="text"
+                  placeholder="Enter Inch Value"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='Enter Inch Value'"
+               />
+            </div>
+            <div class="convert-btn">
+               <button class="convert-btn__inchToCm">Inch To CM</button>
+               <button class="convert-btn__cmToInch">CM To Inch</button>
+            </div>
+            <div class="input__cm">
+               <h3>cm</h3>
+               <input
+                  type="text"
+                  placeholder="Enter Cm Value"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='Enter Cm Value'"
+               />
+            </div>
+            <div class="error">
+               <span class="error__message"></span>
+            </div>
+         </main>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
